@@ -62,6 +62,13 @@ void AdministracionEmpleados::Buscar()
 	/* Titulo */
 	cout << "*** BUSCAR EMPLEADO ***" << endl;
 
+	/* Actuar en caso de que no haya nadie */
+	if (empleados.empty())
+	{
+		cout << "No hay ningún empleado registrado" << endl;
+		return;
+	}
+
 	/* Solicitar un RFC */
 	string RFC;
 	cout << "Ingrese el RFC del empleado a buscar: ";
@@ -98,6 +105,13 @@ void AdministracionEmpleados::Eliminar()
 	/* Titulo */
 	cout << "*** BUSCAR EMPLEADO ***" << endl;
 
+	/* Actuar en caso de que no haya nadie */
+	if (empleados.empty())
+	{
+		cout << "No hay ningún empleado registrado" << endl;
+		return;
+	}
+
 	/* Solicitar un RFC */
 	string RFC;
 	cout << "Ingrese el RFC del empleado a eliminar: ";
@@ -128,6 +142,13 @@ void AdministracionEmpleados::Enlistar(string orden)
 {
 	/* Titulo */
 	cout << "*** LISTA DE EMPLEADOS ***" << endl;
+
+	/* Actuar en caso de que no haya nadie */
+	if (empleados.empty())
+	{
+		cout << "No hay ningún empleado registrado" << endl;
+		return;
+	}
 
 	/* Ordenar */
 	if (orden == "Ninguno")

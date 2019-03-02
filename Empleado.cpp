@@ -1,6 +1,6 @@
 #include "Empleado.h"
 
-Empleado::Empleado(int * id, const char * nombre, const char * apellidoPaterno, const char * apellidoMaterno, const char * RFC, int * fechaIngreso)
+Empleado::Empleado(int id, string nombre, string apellidoPaterno, string apellidoMaterno, string RFC, int fechaIngreso)
 {
 	this->id = id;
 	this->nombre = nombre;
@@ -10,32 +10,32 @@ Empleado::Empleado(int * id, const char * nombre, const char * apellidoPaterno, 
 	this->fechaIngreso = fechaIngreso;
 }
 
-int * Empleado::ObtenerID()
+int Empleado::ObtenerID()
 {
 	return this->id;
 }
 
-const char * Empleado::ObtenerNombre()
+string Empleado::ObtenerNombre()
 {
 	return this->nombre;
 }
 
-const char * Empleado::ObtenerApellidoPaterno()
+string Empleado::ObtenerApellidoPaterno()
 {
 	return this->apellidoPaterno;
 }
 
-const char * Empleado::ObtenerApellidoMaterno()
+string Empleado::ObtenerApellidoMaterno()
 {
 	return this->apellidoMaterno;
 }
 
-const char * Empleado::ObtenerRFC()
+string Empleado::ObtenerRFC()
 {
 	return this->RFC;
 }
 
-int * Empleado::ObtenerFechaIngreso()
+int Empleado::ObtenerFechaIngreso()
 {
 	return this->fechaIngreso;
 }

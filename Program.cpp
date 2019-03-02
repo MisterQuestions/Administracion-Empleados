@@ -1,4 +1,8 @@
+#include <locale.h>
+#include <stdlib.h>
 #include "AdministracionEmpleados.h"
+
+using namespace std;
 
 int main()
 {
@@ -32,6 +36,14 @@ int main()
 		cout << "Selecciona una opción: ";
 		cin >> opcion;
 
+		/* Quitar el menu */
+		system("cls");
+
+		/* Asegurarse que no hay nada en el input */
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+		/* Accion */
 		switch (opcion)
 		{
 		case '1':

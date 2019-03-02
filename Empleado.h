@@ -1,24 +1,26 @@
 #pragma once
 
+#include <string>
+
 using namespace std;
 
 class Empleado
 {
 	private:
-		int * id;
-		const char * nombre;
-		const char * apellidoPaterno;
-		const char * apellidoMaterno;
-		const char * RFC;
-		int * fechaIngreso;
+		int id;
+		string nombre;
+		string apellidoPaterno;
+		string apellidoMaterno;
+		string RFC;
+		int fechaIngreso;
 
 	public:
-		Empleado(int * id, const char * nombre, const char * apellidoPaterno, const char * apellidoMaterno, const char * RFC, int * fechaIngreso);
+		Empleado(int id, string nombre, string apellidoPaterno, string apellidoMaterno, string RFC, int fechaIngreso);
 
-		int * ObtenerID();
-		const char * ObtenerNombre();
-		const char * ObtenerApellidoPaterno();
-		const char * ObtenerApellidoMaterno();
-		const char * ObtenerRFC();
-		int * ObtenerFechaIngreso();
+		int ObtenerID();
+		string ObtenerNombre();
+		string ObtenerApellidoPaterno();
+		string ObtenerApellidoMaterno();
+		string ObtenerRFC();
+		int ObtenerFechaIngreso();
 };

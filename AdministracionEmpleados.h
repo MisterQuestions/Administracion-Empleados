@@ -1,20 +1,19 @@
 #pragma once
 
 #include "Empleado.h"
-#include <locale.h>
-#include <stdlib.h>
-#include <iostream>
 #include <list>
+#include <iostream>
 
 class AdministracionEmpleados
 {
-	private:
-		static list<Empleado> trabajadores;
-		static list<Empleado>::iterator empleado;
-
 	public:
 		static void Ingresar();
 		static void Buscar();
 		static void Eliminar();
-		static void Enlistar(const char * orden);
+		static void Enlistar(string orden);
+
+		static bool OrdenarID(Empleado a, Empleado b);
+		static bool OrdenarRFC(Empleado a, Empleado b);
+		static bool OrdenarApellidos(Empleado a, Empleado b);
+		static bool OrdenarIngreso(Empleado a, Empleado b);
 };

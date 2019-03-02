@@ -46,32 +46,32 @@ int main()
 		/* Accion */
 		switch (opcion)
 		{
-		case '1':
-			AdministracionEmpleados::Ingresar();
-			break;
-		case '2':
-			AdministracionEmpleados::Buscar();
-			break;
-		case '3':
-			AdministracionEmpleados::Eliminar();
-			break;
-		case '4':
-			AdministracionEmpleados::Enlistar("Ninguno");
-			break;
-		case '5':
-			AdministracionEmpleados::Enlistar("RFC");
-			break;
-		case '6':
-			AdministracionEmpleados::Enlistar("Apellidos");
-			break;
-		case '7':
-			AdministracionEmpleados::Enlistar("Ingreso");
-			break;
-		case '8':
-			exit(0);
-		default:
-			cout << "Opción inválida" << endl;
-			break;
+			case '1':
+				AdministracionEmpleados::Ingresar();
+				break;
+			case '2':
+				AdministracionEmpleados::Buscar();
+				break;
+			case '3':
+				AdministracionEmpleados::Eliminar();
+				break;
+			case '4':
+				AdministracionEmpleados::Enlistar("Ninguno");
+				break;
+			case '5':
+				AdministracionEmpleados::Enlistar("RFC");
+				break;
+			case '6':
+				AdministracionEmpleados::Enlistar("Apellidos");
+				break;
+			case '7':
+				AdministracionEmpleados::Enlistar("Ingreso");
+				break;
+			case '8':
+				exit(0);
+			default:
+				cout << "Opción inválida" << endl;
+				break;
 		}
 
 		/* Volver al menu tras la pausa */

@@ -6,7 +6,7 @@ list<Empleado>::iterator iteradorEmpleados;
 void AdministracionEmpleados::Ingresar()
 {
 	/* Titulo */
-	cout << "*** REGISTRAR UN NUEVO EMPLEADO ***" << endl;
+	cout << "*** REGISTRAR EMPLEADO ***" << endl;
 
 	/* Solicitar datos */
 	string nombre;
@@ -103,7 +103,7 @@ void AdministracionEmpleados::Buscar()
 void AdministracionEmpleados::Eliminar()
 {
 	/* Titulo */
-	cout << "*** BUSCAR EMPLEADO ***" << endl;
+	cout << "*** ELIMINAR EMPLEADO ***" << endl;
 
 	/* Actuar en caso de que no haya nadie */
 	if (empleados.empty())
